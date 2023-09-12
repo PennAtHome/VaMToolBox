@@ -1,20 +1,22 @@
 @echo off
-echo VaM ToolBox¹¤¾ßÏä by PennAtHome @ 2023
-echo Õâ¸ö¹¤¾ß¿ìËÙÉú³ÉÔ¤ÀÀÍ¼ Óë ¶Ô²»Í¬ÀàÐÍvar½øÐÐ·ÖÀàÅÅÐò
-echo Äã¿ÉÒÔ½«Õâ¸öÎÄ¼þ·ÅÖÃÔÚ Var ÎÄ¼þËùÓÐÄ¿Â¼£¬È»ºóÖ´ÐÐ±¾ bat ¼´¿É
+echo VaM ToolBoxå·¥å…·ç®± by PennAtHome @ 2023
+echo è¿™ä¸ªå·¥å…·å¿«é€Ÿç”Ÿæˆé¢„è§ˆå›¾ ä¸Ž å¯¹ä¸åŒç±»åž‹varè¿›è¡Œåˆ†ç±»æŽ’åº
+echo ä½ å¯ä»¥å°†è¿™ä¸ªæ–‡ä»¶æ”¾ç½®åœ¨ Var æ–‡ä»¶æ‰€æœ‰ç›®å½•ï¼Œç„¶åŽæ‰§è¡Œæœ¬ bat å³å¯
 echo .
 pause
 
-echo ¼´½«Éú³ÉÔ¤ÀÀÍ¼ [%1]
+cd /d %~dp0
+
+echo å³å°†ç”Ÿæˆé¢„è§ˆå›¾ [%1]
 echo .
 
 python VarToPreview.py %1
 
 echo .
-echo Ô¤ÀÀÍ¼Éú³ÉÍê±Ï£¬¼´½«°´Àà±ð½øÐÐ·ÖÀà¹éµµ£¨Èç¹û²»ÐèÒª·ÖÀà£¬Çë¹Ø±Õ±¾´°¿Ú£©
+echo é¢„è§ˆå›¾ç”Ÿæˆå®Œæ¯•ï¼Œå³å°†æŒ‰ç±»åˆ«è¿›è¡Œåˆ†ç±»å½’æ¡£ï¼ˆå¦‚æžœä¸éœ€è¦åˆ†ç±»ï¼Œè¯·å…³é—­æœ¬çª—å£ï¼‰
 pause
 echo .
 python VarToSort.py %1
 echo .
-echo È«²¿Ö´ÐÐÍê±Ï£¬°´ÈÎÒâ¼ü½áÊø
+echo å…¨éƒ¨æ‰§è¡Œå®Œæ¯•ï¼ŒæŒ‰ä»»æ„é”®ç»“æŸ
 pause
